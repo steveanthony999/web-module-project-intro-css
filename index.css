@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono:wght@400;500&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* UTILITIES */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 1.4px;
+}
+
+.container {
+  width: 1100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  line-height: 1.4rem;
+}
+
+p {
+  text-align: center;
+  line-height: 1.6rem;
+}
+
+/* NAV */
+nav {
+  height: 4rem;
+  width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 4rem;
+}
+
+.nav-btn {
+  max-width: 10rem;
+  padding: 0.8rem 1.8rem;
+  font-size: 1.3rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: 0.4s;
+}
+
+.nav-btn:hover {
+  max-width: 10.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.23);
+}
+
+.nav-btn:first-child {
+  background-color: #ff764e;
+}
+
+.nav-btn:first-child:hover {
+  background-color: #dd7626;
+}
+
+.nav-btn:nth-child(2) {
+  background-color: #5ed3eb;
+}
+
+.nav-btn:nth-child(2):hover {
+  background-color: #5e91eb;
+}
+
+.nav-btn:last-child {
+  background-color: #ffcd69;
+}
+
+.nav-btn:last-child:hover {
+  background-color: #cc9869;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+}
+
+#header-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: url('./assets/header_img.jpg') no-repeat center center/cover;
+}
+
+#header-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  margin-left: 60px;
+}
+
+h1 {
+  font-family: 'Chelsea Market', cursive;
+  font-size: 4rem;
+}
+
+#header-txt p {
+  width: 34rem;
+}
+
+#header-txt h2,
+#header-txt p {
+  font-size: 1.2rem;
+}
+
+/* PARK INFO SECTION */
+#park-info-section {
+  margin-top: 60px;
+}
+
+#park-info-section p {
+  background-color: #ddb9a3;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 20px;
+}
+
+/* VISITOR INFO SECTION */
+#visitor-info-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-img {
+  width: 120px;
+  height: 120px;
+  margin-top: 60px;
+}
+
+#fire {
+  background: url('https://image.flaticon.com/icons/svg/2979/2979348.svg')
+    no-repeat center center/cover;
+}
+
+#bus {
+  background: url('https://image.flaticon.com/icons/svg/820/820374.svg')
+    no-repeat center center/cover;
+}
+
+#visitor-info-section p {
+  width: 300px;
+  font-size: 0.9rem;
+  margin: 10px;
+  letter-spacing: 0;
+  line-height: 1.1rem;
+}
+
+#visitor-info-section p span {
+  font-weight: bold;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9e7dc;
+}
+
+#footer-img {
+  width: 100vw;
+  height: 300px;
+  background: url('./assets/footer_img.jpg') no-repeat center/cover;
+  background-position: 100% 20%;
+}
+
+footer nav {
+  width: 1100px;
+  padding: 60px;
+  margin-top: 0;
+}
