@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono:wght@200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chelsea+Market&family=Roboto+Mono:wght@400;500&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -172,18 +172,38 @@ nav {
   font-size: 1.3rem;
   border-radius: 20px;
   text-align: center;
+  transition: 0.4s;
+}
+
+.nav-btn:hover {
+  max-width: 10.5rem;
+  padding: 1rem 2rem;
+  font-size: 1.4rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.23);
 }
 
 .nav-btn:first-child {
   background-color: #ff764e;
 }
 
+.nav-btn:first-child:hover {
+  background-color: #dd7626;
+}
+
 .nav-btn:nth-child(2) {
   background-color: #5ed3eb;
 }
 
+.nav-btn:nth-child(2):hover {
+  background-color: #5e91eb;
+}
+
 .nav-btn:last-child {
   background-color: #ffcd69;
+}
+
+.nav-btn:last-child:hover {
+  background-color: #cc9869;
 }
 
 /* HEADER */
@@ -269,7 +289,7 @@ h1 {
 }
 
 #visitor-info-section p span {
-  font-weight: 500;
+  font-weight: bold;
 }
 
 /* FOOTER */
@@ -278,7 +298,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ffeedd;
+  background-color: #f9e7dc;
 }
 
 #footer-img {
